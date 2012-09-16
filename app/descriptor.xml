@@ -1,0 +1,10 @@
+<descriptor>
+  <version>0.1.0</version>
+  <accesses>
+    <access>led</access>
+    <access>ears</access>
+    <access>button</access>
+    <access>tts</access>
+    <access>http</access>
+  </accesses>
+</descriptor>

@@ -1,0 +1,33 @@
+<screen>
+  <text label="Jenkins view URL" name="jenkins_view_url" required="true" default="http://your_host:your_port/view/your_view"/>
+
+  <select label="Speak" name="language" type="one" required="true">
+    <option label="English" key="en" checked="true"/>
+    <option label="French" key="fr"/>
+    <option label="German" key="de"/>
+    <option label="Spanish" key="es"/>
+  </select>
+
+  <text label="Success message" name="successMessage" required="true" default="&lt;prosody pitch='300Hz' rate='x-slow'&gt;&lt;voice emotion='cross'&gt;weepee&lt;/voice&gt;&lt;/prosody&gt;" />
+  <text label="Success LED" name="successColor" required="true" default="00FF00"/>
+  <text label="Success ears" name="successEars" required="true" default="0"/>
+
+  <text label="Unstable message" name="unstableMessage" required="true" default="&lt;prosody pitch='300Hz' rate='x-slow'&gt;o oh&lt;/prosody&gt;"/>
+  <text label="Unstable LED" name="unstableColor" required="true" default="FFFF00"/>
+  <text label="Unstable ears" name="unstableEars" required="true" default="5"/>
+
+  <text label="Failure message" name="failureMessage" required="true" default="&lt;prosody pitch='300Hz' rate='x-slow'&gt;oh no&lt;/prosody&gt;"/>
+  <text label="Failure LED" name="failureColor" required="true" default="FF0000"/>
+  <text label="Failure ears" name="failureEars" required="true" default="8"/>
+
+  <text label="Network error message" name="unknownMessage" required="true" default="&lt;prosody pitch='300Hz' rate='x-slow'&gt;huh&lt;/prosody&gt;"/>
+  <text label="Network error LED" name="unknownColor" required="true" default="FF00FF"/>
+  <text label="Network error ears" name="unknownEars" required="true" default="8"/>
+
+  <select label="Failure mode" name="failureMode" type="one" required="true">
+    <option label="Retry" key="retry" checked="true"/>
+    <option label="Exit" key="exit"/>
+  </select>
+
+  <text label="Retry interval (s)" name="retryInterval" required="true" default="120"/>
+</screen>
