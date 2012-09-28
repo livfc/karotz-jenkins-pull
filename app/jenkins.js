@@ -1,10 +1,16 @@
+// Removes the '_anime' suffix if present.
+var rawColor = function(color) {
+  return color.split("_")[0];
+}
+
 var globalState = function(jobs) {
   var globalState, i, color;
   globalState = "success";
   for (i = 0; i < jobs.length; i++) {
-    color = jobs[i].color;
+    color = rawColor(jobs[i].color);
     if (color == "red") return "failure";
-    if (color == "yellow") globalState = "unstable";
+    if (color == "gray") globalState = "unknown";
+    if (color == "yellow" && globalState === "success") globalState = "unstable";
   }
   return globalState;
 }
