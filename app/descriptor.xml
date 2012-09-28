@@ -1,5 +1,5 @@
 <descriptor>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <accesses>
     <access>led</access>
     <access>ears</access>
