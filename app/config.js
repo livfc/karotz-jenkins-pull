@@ -5,7 +5,7 @@ if (typeof instanceName !== 'undefined') { // Production
   config = params[instanceName];
 
 } else { // Dev environment
-  karotz_ip = "192.168.0.33";
+  karotz_ip = "192.168.31.23";
 
   config = {};
   config.jenkins_view_url = "http://192.168.0.26:8080/javadoc";
